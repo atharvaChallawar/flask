@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Store Homepage{% endblock %}
+
+{% block content %}
+
+<div id="content">
+
+<br><br>
+
+<h1>Welcome To Pizza House</h1>
+<h2>Search For Pizza</h2><br>
+
+<form action="?" method="GET" onsubmit="search();return false;">
+	<input type="text" id="searchItem" value=""/>
+	<input class="button" type="submit" value="Search" />
+</form>
+
+<br><br>
+<center>
+<table id="results">
+<tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Price</th>
+</tr>
+</table>
+</center>
+
+<p id="stat"></p>
+
+</div>
+{% endblock %}
